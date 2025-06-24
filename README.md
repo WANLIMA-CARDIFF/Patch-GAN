@@ -52,8 +52,9 @@ Clouds frequently obscure optical satellite imagery, limiting its utility in rem
 | **Ours**         | **0.976**   | **0.955**   |
 
 <p align="center">
-  <img src="fgures/results.png" alt="Cloud Removal Results" width="700"><br>
-  <em> Visual results on the RICE1 (top) and RICE2 (bottom) datasets. From left to right are the cloud-covered image, the generated cloud-free image, and the ground truth cloud-free image.</em>
+  <img src="fgures/result1.png" alt="Cloud Removal Results (RICE1)" width="700"><br>
+  <img src="fgures/result2.png" alt="Cloud Removal Results (RICE2)" width="700"><br>
+  <em> From left to right are the cloud-covered image, the generated cloud-free image, and the ground truth cloud-free image.</em>
 </p>
 
 ---
