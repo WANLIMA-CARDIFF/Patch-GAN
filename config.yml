@@ -1,0 +1,35 @@
+
+# folder path of dataset, which includes 2 subfolders: cloudy_image/ and ground_truth/
+datasets_dir: ./data/RICE_DATASET/RICE1/
+train_list: train_list.txt
+test_list: test_list.txt
+out_dir: results_vit
+Generator: mae_vit_large_patch16
+pretrained_model: ./mae_visualize_vit_large_ganloss.pth
+mask_rate: 0
+cuda: True
+gpu_ids: [0]
+
+train_size: 0.8
+validation_size: 0.2 # 验证集大小是占训练集的半分比
+batchsize: 1
+validation_batchsize: 1
+epoch: 200
+n_data: 433
+width: 224
+height: 224
+threads: 4
+
+lr: 0.001
+lr_dis: 0.0005
+beta1: 0.5
+lamb: 0
+minimax: 1
+
+gen_init: 
+dis_init:
+in_ch: 3
+out_ch: 3
+
+manualSeed: 0
+snapshot_interval: 30
