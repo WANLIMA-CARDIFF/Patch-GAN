@@ -70,14 +70,16 @@ We use the [RICE Dataset](https://github.com/BUPTLdy/RICE_DATASET):
 
 ## 🚀 Getting Started
 
+The code is based on [MAE](https://github.com/facebookresearch/mae). Please install the MAE environment for our code implementation.
+
 ```bash
 # Clone repository
 git clone https://github.com/your-username/cloud-removal-patch-gan.git
 cd cloud-removal-patch-gan
 
-# Install dependencies
-pip install -r requirements.txt
 ```
+
+Download the dataset and place it in the "data" folder.
 
 ### Pretrained MAE (ViT-large + GAN Loss)
 Download from [Facebook MAE repository](https://dl.fbaipublicfiles.com/mae/visualize/mae_visualize_vit_large_ganloss.pth)
@@ -89,6 +91,7 @@ python train.py
 ```
 
 ### Inference
+Please download the pretrained [checkpoints](https://drive.google.com/drive/folders/1VmtPOJEyyfkpnrxM8eb1GtQBTyL3RUZ5?usp=sharing) and update the checkpoint path in text.py accordingly.
 
 ```bash
 python test.py
